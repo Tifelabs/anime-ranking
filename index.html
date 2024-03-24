@@ -1,48 +1,131 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Playground</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Anime Ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>TIFE PLAYGROUND</h1>
-    <p>I'm a software Developer</p>
-    <hr/>
-    <h3><a href="./public/movie-ranking.html">MOVIE RANK PROJECT</a></h3>
-    <h1>The Best Movies According to Tife</h1>
-            <h2>My top 3 movies of all-time.</h2>
-            <hr/>
-            <h2>Spirited Away</h2>
-            <p>This is my favourite anime. I love the beautiful sceneries and the story.</p>
-            <img src="./assets/images/spirited-away.png" alt="spirited-away" class="spirited-away">
-            <h2>Jujitsu Kaisen</h2>
-            <p>This is one of my Favorite action anime</p>
-            <img src="./assets/images/jujutsu-kaisen.png" alt="jujutsu-kaisen" class="jujitsu-kaisen">
-            <h2>The social network</h2>
-            <p>Super beautiful film. Really artistic.</p>
-            <p>It showed how learning programming can be a beautiful thing.</p>
-            <img src="./assets/images/the-social-network.jpg" alt="the-social-network" class="the-social-network">
-            <br>
-            <br>
-    <h3><a href="./public/birthday-invite.html">BIRTHDAY INVITE PROJECT</a></h3>
-    <h1>It's My Birthday!</h1>
-    <h2>On the 30th August</h2>
+    <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Anime Ranking</h1>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="Makima" src="./assets/images/Makima.jpg" alt="" width="500">
+          </div>
+        </div>
+      </div>
 
-    <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg"
-    alt="purple birthday cake with candles" />
+<!--Anime Section-->
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/spirited-away.png" alt="">
+                <div class="card-body">
+                    <h5><strong>Spirited Away</strong></h5>
+                  <p class="card-text">This anime is really great based on its story.The graphics and its nostalgic feeling.</p>
+                </div>
+              </div>
+            </div>
 
-    <h3>What to bring:</h3>
-    <ul>
-    <li>I love PC Builds</li>
-    <li>Gaming Gears</li>
-    <li>LEGOs</li>
-    </ul>
+            <!--Jujutsu Kaisen-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/jjk.png" alt="" height="257">
+                <div class="card-body">
+                    <h5><strong>Jujutsu Kaisen</strong></h5>
+                  <p class="card-text">Jujutsu Kaisen is an action anime with alot of characters spicying up the animation with suspense and different forms of cursed energy..</p>
+                </div>
+              </div>
+            </div>
 
-    <h3>This is where you need to go:</h3>
-    <a
-    href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,289.6h,87.01t,0.72r/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656">Google
-    map link</a>
+            <!--Death note-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/death-note.jpg" alt="" height="279">
+                <div class="card-body">
+                    <h5><strong>Death Note</strong></h5>
+                  <p class="card-text">This is a must watch anime.Alot of suspense behind the scenes.It has a great story line.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!--Attack on Titans-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/aot.jpg" alt="" height="255">
+                <div class="card-body">
+                    <h5><strong>Attack on Titans</strong></h5>
+                  <p class="card-text">The graphics and storyline is really great.This beautiful anime to add on your bucket list.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Your name-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/your-name.jpg" alt="" height="255">
+                <div class="card-body">
+                    <h5><strong>Your Name</strong></h5>
+                  <p class="card-text">This is the most beautiful anime I have ever watched, it showed a great story of japan and it's culture.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Demon Slayer-->
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="./assets/images/demon-slayer.jpg" alt="" height="230">
+                <div class="card-body">
+                    <h5><strong>Demon Slayer</strong></h5>
+                  <p class="card-text">Demon Slayer is part of the top tier list of anime I will recommend to anyone. It has interesting and Epic fight battles.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Naruto-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/naruto.jpg" alt="" height="255">
+                <div class="card-body">
+                    <h5><strong>Naruto</strong></h5>
+                  <p class="card-text">This is the anime i grew up watching, it has alot of episodes, nevertheless it is one of the best anime out there with great battles and visuals</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Silent Voice-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/silent-voice.jpg" alt="" height="279">
+                <div class="card-body">
+                    <h5><strong>Silent Voice</strong></h5>
+                  <p class="card-text">This is one of the most touching and saddest anime I have ever watched. The story line is 10/10.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Tokyo Revengers-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./assets/images/tokyo.jpg" alt="" height="279">
+                <div class="card-body">
+                    <h5><Strong>Tokyo Revengers</Strong></h5>
+                  <p class="card-text">Tokyo revengers is a great start. It is funny, interesting and it offers varieties of epic fight scenes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--Footer-->
+<footer class="py-3 my-4">
+    <p class="text-center text-body-secondary">© 2023 Tifelabs, Anime Ranking.</p>
+  </footer>
 </body>
 </html>
