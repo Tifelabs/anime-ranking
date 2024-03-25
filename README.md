@@ -1,7 +1,7 @@
-# A PlayGround With Html and Css
+# An Anime ranking List
 ## The Web View
 
-![Alt text](./assets/images/web-view.png)
+![Alt text](./assets/images/webview.png)
 
 ## Mobile View
 ![Alt text](./assets/images/mobile.png)
