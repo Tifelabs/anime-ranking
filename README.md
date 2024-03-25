@@ -3,9 +3,6 @@
 
 ![Alt text](./assets/images/webview.png)
 
-## Mobile View
-![Alt text](./assets/images/mobile.png)
-
 ## To View
-[click here to view webpage](https://boluwatifeolusegun.github.io/movie-ranking/)
+[click here to view webpage](https://boluwatifeolusegun.github.io/anime-ranking/)
 
