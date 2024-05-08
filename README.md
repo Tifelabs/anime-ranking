@@ -4,5 +4,5 @@
 ![Alt text](./assets/images/webview.png)
 
 ## To View
-[click here to view webpage](https://boluwatifeolusegun.github.io/anime-ranking/)
+[click here to view webpage](https://tifelabs.github.io/anime-ranking/)
 
