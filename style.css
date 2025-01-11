@@ -1,12 +1,19 @@
-.Makima{
+.Makima {
     border-radius: 50px;
     padding-bottom: 10px;
 }
-.top{
+
+.top {
     border-radius: 50px 0px;
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
 }
 
-h5{
+h5 {
     font-family: sans-serif;
 }
 
+/* Optional: Improve card text readability on smaller devices */
+.card-text {
+    font-size: 0.9rem;
+}

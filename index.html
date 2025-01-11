@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,118 +8,143 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-      <div class="container my-5">
-       <img src="./assets/images/ANIME.png" alt="" class="top">
-      </div>
+    <!-- Header Section -->
+    <div class="container my-5 text-center">
+        <img src="./assets/images/ANIME.png" alt="Anime Ranking Logo" class="img-fluid top">
+    </div>
 
-            <!--Anime Section-->
+    <!-- Search Bar -->
+    <div class="container mb-4">
+        <div class="input-group">
+            <input type="text" id="searchBar" class="form-control" placeholder="Search for an anime..." onkeyup="searchAnime()">
+        </div>
+    </div>
+
+    <!-- Anime Section -->
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
-         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/spirited-away.png" alt="">
-                <div class="card-body">
-                    <h5><strong>#1 Spirited Away</strong></h5>
-                  <p class="card-text">This anime is really great based on its story.The graphics and its nostalgic feeling.</p>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="animeList">
+                <!-- Spirited Away -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/spirited-away.png" alt="Spirited Away" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#1 Spirited Away</strong></h5>
+                            <p class="card-text">This anime is really great based on its story. The graphics and its nostalgic feeling.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Jujutsu Kaisen-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/jjk.png" alt="" height="257">
-                <div class="card-body">
-                    <h5><strong>#2 Jujutsu Kaisen</strong></h5>
-                  <p class="card-text">Jujutsu Kaisen is an action anime with alot of characters spicying up the animation with suspense and different forms of cursed energies.</p>
+                <!-- Jujutsu Kaisen -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/jjk.png" alt="Jujutsu Kaisen" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#2 Jujutsu Kaisen</strong></h5>
+                            <p class="card-text">Jujutsu Kaisen is an action anime with a lot of characters spicing up the animation with suspense and different forms of cursed energies.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Death note-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/death-note.jpg" alt="" height="279">
-                <div class="card-body">
-                    <h5><strong>#3 Death Note</strong></h5>
-                  <p class="card-text">This is a must watch anime.Alot of suspense behind the scenes.It has a great story line.</p>
+                <!-- Death Note -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/death-note.jpg" alt="Death Note" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#3 Death Note</strong></h5>
+                            <p class="card-text">This is a must-watch anime. A lot of suspense behind the scenes. It has a great storyline.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            
-            <!--Attack on Titans-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/aot.jpg" alt="" height="255">
-                <div class="card-body">
-                    <h5><strong>#4 Attack on Titans</strong></h5>
-                  <p class="card-text">The graphics and storyline is really great.This beautiful anime to add on your bucket list.</p>
-                </div>
-              </div>
-            </div>
 
-            <!--Your name-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/your-name.jpg" alt="" height="255">
-                <div class="card-body">
-                    <h5><strong>#5 Your Name</strong></h5>
-                  <p class="card-text">This is the most beautiful anime I have ever watched, it showed a great story of japan and it's culture.</p>
+                <!-- Attack on Titan -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/aot.jpg" alt="Attack on Titan" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#4 Attack on Titan</strong></h5>
+                            <p class="card-text">The graphics and storyline are really great. This is a beautiful anime to add to your bucket list.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Demon Slayer-->
-            <div class="col">
-              <div class="card shadow-sm">
-               <img src="./assets/images/demon-slayer.jpg" alt="" height="230">
-                <div class="card-body">
-                    <h5><strong>#6 Demon Slayer</strong></h5>
-                  <p class="card-text">Demon Slayer is part of the top tier list of anime I will recommend to anyone. It has interesting and Epic fight battles.</p>
+                <!-- Your Name -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/your-name.jpg" alt="Your Name" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#5 Your Name</strong></h5>
+                            <p class="card-text">This is the most beautiful anime I have ever watched. It showed a great story of Japan and its culture.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Naruto-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/naruto.jpg" alt="" height="255">
-                <div class="card-body">
-                    <h5><strong>#7 Naruto</strong></h5>
-                  <p class="card-text">This is the anime i grew up watching, it has alot of episodes, nevertheless it is one of the best anime out there with great battles and visuals</p>
+                <!-- Demon Slayer -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/demon-slayer.jpg" alt="Demon Slayer" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#6 Demon Slayer</strong></h5>
+                            <p class="card-text">Demon Slayer is part of the top-tier list of anime I will recommend to anyone. It has interesting and epic fight battles.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Silent Voice-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/silent-voice.jpg" alt="" height="279">
-                <div class="card-body">
-                    <h5><strong>#8 Silent Voice</strong></h5>
-                  <p class="card-text">This is one of the most touching and saddest anime I have ever watched. The story line is 10/10.</p>
+                <!-- Naruto -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/naruto.jpg" alt="Naruto" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#7 Naruto</strong></h5>
+                            <p class="card-text">This is the anime I grew up watching. It has a lot of episodes. Nevertheless, it is one of the best anime out there with great battles and visuals.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!--Tokyo Revengers-->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./assets/images/tokyo.jpg" alt="" height="279">
-                <div class="card-body">
-                    <h5><Strong>#9 Tokyo Revengers</Strong></h5>
-                  <p class="card-text">Tokyo revengers is a great start. It is funny, interesting and it offers varieties of epic fight scenes</p>
+                <!-- A Silent Voice -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/silent-voice.jpg" alt="A Silent Voice" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#8 A Silent Voice</strong></h5>
+                            <p class="card-text">This is one of the most touching and saddest anime I have ever watched. The storyline is 10/10.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- Tokyo Revengers -->
+                <div class="col anime-item">
+                    <div class="card shadow-sm h-100">
+                        <img src="./assets/images/tokyo.jpg" alt="Tokyo Revengers" class="img-fluid">
+                        <div class="card-body">
+                            <h5><strong>#9 Tokyo Revengers</strong></h5>
+                            <p class="card-text">Tokyo Revengers is a great start. It is funny, interesting, and it offers a variety of epic fight scenes.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-<!--Footer-->
-<footer class="py-3 my-4">
-    <p class="text-center text-body-secondary">© 2023 Tifelabs, Anime Ranking.</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="py-3 my-4">
+        <p class="text-center text-body-secondary">&copy; 2023 Tifelabs, Anime Ranking.</p>
+    </footer>
+
+    <script>
+        function searchAnime() {
+            const searchInput = document.getElementById('searchBar').value.toLowerCase();
+            const animeItems = document.querySelectorAll('.anime-item');
+
+            animeItems.forEach(item => {
+                const animeName = item.querySelector('h5').innerText.toLowerCase();
+                if (animeName.includes(searchInput)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
